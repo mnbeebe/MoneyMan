@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if expense_list %}
+    <ul>
+        {% for expense in expense_list %}
+        <li>{{ expense }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+{% endblock%}
